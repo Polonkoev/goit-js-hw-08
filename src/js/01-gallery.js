@@ -11,9 +11,9 @@ const divGallery = document.querySelector(".gallery");
 
 
 const markupEl = galleryItems.map(({preview, original, description })=>
-     (`<li><a class="gallery__item" href="${original}">
+     (`<a class="gallery__item " href="${original}">
           <img class="gallery__image" src="${preview}" alt="${description}" />
-        </a></li>
+        </a>
           `)).join('');
 
 
@@ -21,3 +21,5 @@ divGallery.insertAdjacentHTML('afterbegin', markupEl)
 
 new SimpleLightbox('.gallery a', { captionsData: 'alt',
 captionDelay: 250, })
+
+
