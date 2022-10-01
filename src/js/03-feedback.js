@@ -36,7 +36,7 @@ function submitFoo(event){
     event.preventDefault();
 let currentData = {
     email: inputEl.value, 
-    message: textAreaEl.textContent
+    message: textAreaEl.value
 }
 console.log(currentData);
 localStorage.removeItem('feedback-form-state')
